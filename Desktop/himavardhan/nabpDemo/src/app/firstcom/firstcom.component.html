@@ -1,0 +1,15 @@
+<p>firstcom works!</p>
+<select class="citie" [(ngModel)]='seletedValue' name="infor" (change)="callchange($event.target.value)" >
+    <option *ngFor="let d of data"  >{{ d.city }}</option>
+</select>
+<br>
+<select class="state">
+    <option *ngFor="let d of data" >{{ d.state }}</option>
+</select>
+<br>
+<select class="country">
+    <option *ngFor="let d of data" >{{ d.country }}</option>
+</select>
+
+
+
